@@ -369,3 +369,36 @@ body > main {
     min-height: 44px;
   }
 }
+
+/* ── Kit checkout ─────────────────────────────────────────────────────────── */
+#campus-stores .kit-checkout {
+  margin-top: 14px;
+  padding: 14px 13px;
+  background: var(--desk);
+  border-left: 3px solid var(--mark);
+}
+#campus-stores .kit-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#campus-stores .kit-item-row label {
+  display: grid;
+  grid-template-columns: minmax(140px, 1fr) minmax(0, 2fr);
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+#campus-stores .kit-item-row label span {
+  margin-bottom: 0;
+}
+#campus-stores .kit-item-row select {
+  width: 100%;
+  font-weight: 400;
+}
+@container (max-width:500px) {
+  #campus-stores .kit-item-row label {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
